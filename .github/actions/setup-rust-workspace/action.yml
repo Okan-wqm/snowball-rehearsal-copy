@@ -10,7 +10,7 @@ runs:
       run: node "${{ github.action_path }}/resolve-toolchain.mjs"
 
     - name: Install repository Rust toolchain
-      uses: dtolnay/rust-toolchain@67ef31d5b988238dd797d409d6f9574278e20537 # stable
+      uses: dtolnay/rust-toolchain@683b588c487a69d01f6c6ddf40f036ff682cc2c8 # stable
       with:
         toolchain: ${{ steps.toolchain.outputs.toolchain }}
         components: ${{ steps.toolchain.outputs.components }}
