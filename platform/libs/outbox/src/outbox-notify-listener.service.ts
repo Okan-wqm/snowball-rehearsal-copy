@@ -297,7 +297,7 @@ export class OutboxNotifyListener implements OnModuleInit, OnModuleDestroy {
       user: pgOptions.username,
       password:
         typeof pgOptions.password === 'string' ? pgOptions.password : undefined,
-      database: pgOptions.database as string | undefined,
+      database: pgOptions.database,
     };
 
     // Propagate SSL settings if present — the shared bootstrap
